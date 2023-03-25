@@ -8,6 +8,21 @@
     <script src="vue.js"></script>
 </head>
 <body>
+
+    <div id="app">
+        <p>{{title}}</p>
+        <p>{{isItTrue}}</p>
+        <p>{{cars[0]}}</p>
+        <p>{{robot.name}}</p>
+        <p>{{greeting()}}</p>
+        <p>{{apm()}}</p>
+        <p>{{rubel()}}</p>
+    </div>
+    <div id="images">
+        <img v-bind:src="src" v-bind:alt="alt">
+        <a v-bind:href="link">Go to google</a>
+    </div>
+
    
     <script src="app.js"></script>
 </body>
