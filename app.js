@@ -121,3 +121,25 @@ new Vue({
     },
     
 });
+
+// v-form
+new Vue({
+    el:"#v-form",
+    data:{
+        formData:{
+            firstName:'',
+            lastName:''
+        }
+      
+    },
+    methods:{
+      
+        handleForm(){
+            // event.preventDefault();
+            console.log(this.formData);
+        }
+      
+
+    },
+    
+});
