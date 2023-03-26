@@ -95,3 +95,29 @@ new Vue({
     },
     
 });
+
+// Event Use
+new Vue({
+    el:"#modifier",
+    data:{
+       name:'Maksuda',
+      
+    },
+    methods:{
+        updateValue(newname){
+           this.name = newname;
+
+        },
+        // handleForm(event){
+        //     event.preventDefault();
+        //     console.log("submit form");
+        // }
+        handleForm(){
+            // event.preventDefault();
+            console.log("submit form");
+        }
+      
+
+    },
+    
+});

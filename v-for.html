@@ -38,6 +38,15 @@
         <p> X:{{x}}</p> 
          <p>:{{y}}</p>
     </div>
+    <div id="modifier">
+        <h3>{{name}}</h3>
+        <button v-on:click.right="updateValue('Anwar')">Update Name</button>
+        <form v-on:submit.prevent="handleForm">
+            <input type="text">
+            <button type="submit">Click Me</button>
+        </form>
+       
+    </div>
 
 
 
