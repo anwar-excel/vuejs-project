@@ -170,3 +170,15 @@ new Vue({
     }
     
 });
+
+// shorthand
+new Vue({
+    el:"#shorthand",
+    data:{
+        a:0,
+        link:"http://google.com",
+        name:""
+      
+    },
+   
+});
