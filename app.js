@@ -74,3 +74,24 @@ new Vue({
     },
     
 });
+// Event Use
+new Vue({
+    el:"#event-use",
+    data:{
+       name:'Aklima',
+       x:0,
+       y:0
+    },
+    methods:{
+        updateName(){
+           this.name ='maksuda';
+
+        },
+        getCoord(event){
+            this.x = event.clientX;
+            this.y = event.clientY;
+        }
+
+    },
+    
+});

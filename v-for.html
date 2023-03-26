@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="vue.js"></script>
 </head>
 <body>
@@ -28,6 +29,17 @@
         <h3 v-once>{{name}}</h3>
         {{update()}}
     </div>
+    <div id="event-use">
+        <h3>{{name}}</h3>
+        <button v-on:click="updateName">Click Me</button>
+        <div v-on:mousemove="getCoord" class="box">
+            hover Me
+        </div>
+        <p> X:{{x}}</p> 
+         <p>:{{y}}</p>
+    </div>
+
+
 
 
 
