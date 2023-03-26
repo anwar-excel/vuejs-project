@@ -143,3 +143,30 @@ new Vue({
     },
     
 });
+
+// v-computing
+new Vue({
+    el:"#computing",
+    data:{
+        a:0,
+        c:0,
+        salary:10
+      
+    },
+    
+    computed:{
+
+        addToA(){
+            console.log("Add A");
+            return this.a + this.salary;
+           },
+    
+           addToC(){
+            console.log("Add C");
+            return this.c + this.salary;
+           }
+          
+
+    }
+    
+});
